@@ -1,0 +1,565 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/*Conf Globais*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+*::selection{
+    background-color: rgb(245, 140, 102);
+    color: black;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+input{
+    background-color: white;
+}
+
+/*Barra superior*/
+.logo-e-pesquisa{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    font-size: 25px;
+    display: inline-flex;
+    flex-direction: row;
+    box-shadow: 2px 0px 5px black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    user-select: none;
+}
+.logo > img{
+    height: 20px;
+}
+.logo{
+    text-decoration: none;
+    color: #ff4500;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+#icone-de-pesquisa{
+    display: flex;
+    padding: 10px;
+}
+#cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 610px;
+    background-image: url("imagens/london.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/*Menu de tabs*/
+
+.opcoes{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 900px;
+    background-color: white;
+}
+
+.container-selecao{
+    position: absolute;
+    display: block;
+    height: fit-content;
+    width: fit-content;
+}
+
+.selecao{
+    width: 900px;
+    height: 40px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-color: black;
+}
+
+.selecao > a{
+    padding: 9.1px 0px;
+    text-decoration: none;
+    color: white;
+    flex-grow: 1;
+    transition: 0.3s;
+}
+
+.selecao > a:focus{
+    background-color: orangered;
+}
+
+.container-viagem{
+    display: block;
+    margin: auto;
+}
+
+.viagem{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 200px;
+    padding: 20px;
+}
+
+.rota{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.rota input{
+    margin-top: 5px;
+    height: 34px;
+    width: 424px;
+    font-size: 16px;
+    border-width: 1px;
+    border-radius: 0px;
+    border-style: solid;
+    padding: 0px 3px;
+}
+.viagem > a{
+    width: fit-content;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    transition: 0.3s;
+}
+
+.viagem > a:focus{
+    background-color: orangered;
+}
+
+.travel{
+    display: block;
+    text-align: left;
+    margin: 15px 0px;
+    font-size: 25px;
+    color: rgb(87, 87, 87);
+}
+
+main{
+    margin: 0px auto;
+}
+
+/*Sessão de ofertas: Cidades*/
+
+#ofertas{
+    margin: 0 auto;
+    width: 1130px;
+}
+
+.titulo-ofertas{
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+.titulo-ofertas > h2{
+    font-size: 30px;
+}
+
+.boas-ofertas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: end;
+}
+
+.cinqueterre{
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 550px;
+    height: 420px;
+    align-items: end;
+}
+
+.cinqueterre img{
+    width: 550px;
+    height: 420px;
+    box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.363);
+}
+
+.cinqueterre span{
+    color: white;
+    position: absolute;
+    padding: 7px;
+}
+
+
+.grid-items{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: end;
+    height: 200px;
+    width: 270px;
+}
+
+.grid-items img{
+    height: 200px;
+    width: 270px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.363);
+}
+
+.grid-items span{
+    position: absolute;
+    padding: 7px;
+    color: white;
+    text-shadow: 5px 1px 5px rgb(0, 0, 0);
+}
+
+/*Sessão de ofertas : Natureza*/
+
+#nature{
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.ofertas-natureza{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1130px;
+
+}
+
+.flex-item{
+    justify-content: space-around;
+    width: 554px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+}
+
+.flex-text{
+    padding: 10px;
+    line-height: 40px;
+}
+
+.flex-text h3{
+    font-size: 30px;
+}
+
+.price{
+    color: gray;
+}
+
+.flex-item img{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.flex-item a{
+    background-color: gray;
+    padding: 10px;
+    text-decoration: none;
+    color:white;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.123);
+}
+
+/*Newsletter*/
+
+.newsletter{
+    margin: 30px auto;
+    width: 1130px;
+    background-color: gray;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.titulo-newsletter h3 {
+    font-size: 35px;
+    margin: 8px 0px;
+}
+
+.newsletter p{
+    margin: 8px 0px 0px 0px;
+}
+
+.newsletter input{
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.newsletter a{
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 20px 0px;
+    background-color: rgb(252, 146, 146);
+}
+
+/*Contato*/
+
+.contact{
+    margin: 0px auto 50px;
+    width: 1130px;
+}
+
+.titulo-contato h3{
+    font-size: 30px;
+}
+
+.titulo-contato p{
+    margin: 10px 0px;
+}
+
+.formas-contato input{
+    display: block;
+    margin: 20px 0px;
+    height: 55px;
+    width: 100%;
+    font-size: 23px;
+    padding-left: 5px;
+    border-radius: 0px;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+}
+
+.formas-contato a{
+    display: block;
+    width: fit-content;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.informacoes{
+    color: rgb(0, 0, 0);
+    padding: 20px 80px;
+    text-decoration: none;
+}
+
+.creditos{
+    text-align: center;
+    color: gray;
+    margin: 20px 0px;
+}
+
+.informacoes a{
+    text-decoration: underline;
+    color: gray;
+    font-weight: bolder;
+}
+
+@media (max-width: 1155px) {
+    .opcoes{
+        height: 250px;
+        width: 750px;
+    }
+    .selecao{
+        width: 750px;
+    }
+    .viagem{
+        width: 750px;
+        height: 200px;
+    }
+    .rota input{
+        width: 300px;
+    }
+
+    #ofertas{
+        margin: 0 auto;
+        width: 720px;
+    }
+    .boas-ofertas{
+        grid-gap: 10px;
+    }
+    .cinqueterre{
+        width: 375px;
+        height: 250px;
+    }
+    
+    .cinqueterre img{
+        width: 375px;
+        height: 250px;
+    }
+
+    .grid-items img{
+        height: 117px;
+        width: 160px;
+    }
+    
+    .grid-items{
+        height: 117px;
+        width: 160px;
+    }
+    
+    .ofertas-natureza{
+        width: 720px;
+    }
+    
+    .flex-item{
+        width: 48%;
+    }
+    .newsletter{
+        width: 720px;
+    }
+    .contact{
+        width: 720px;
+    }
+}
+
+@media (max-width: 769px) {
+    .opcoes{
+        height: 250px;
+        width: 550px;
+    }
+    .selecao{
+        width: 550px;
+    }
+    .viagem{
+        width: 550px;
+        height: 200px;
+    }
+    .rota input{
+        width: 250px;
+    }
+
+    #ofertas{
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .boas-ofertas{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cinqueterre{
+        width: 375px;
+        height: 250px;
+    }
+    
+    .cinqueterre img{
+        width: 375px;
+        height: 250px;
+    }
+
+    .grid-items img{
+        width: 375px;
+        height: 250px;
+    }
+    
+    .grid-items{
+        grid-template-rows: 1fr 1fr;
+        width: 375px;
+        height: 250px;
+    }
+
+    #nature{
+        text-align: center;
+    }
+    
+    .ofertas-natureza{
+        margin: 0 auto;
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .flex-item{
+        width: 100%;
+    }
+    .newsletter{
+        width: 100%;
+    }
+    .contact{
+        padding: 0px 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 569px) {
+    #cabecalho{
+        height: fit-content;
+        background-color: white;
+        background-image: none;
+    }
+
+    .opcoes{
+        height: 250px;
+        width: 100%;
+    }
+
+    .viagem{
+        width: 100%;
+    }
+
+    .selecao{
+        width: 100vw;
+    }
+
+    #from{
+        width: 48%;
+    }
+
+    #to{
+        width: 48%;
+    }
+
+    .rota input{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .cinqueterre{
+        width: 250px;
+        height: 170px;
+    }
+    
+    .cinqueterre img{
+        width: 250px;
+        height: 170px;
+    }
+
+    .grid-items img{
+        width: 250px;
+        height: 170px;
+    }
+    
+    .grid-items{
+        width: 250px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 318px) {
+    .travel{
+        margin: 8px 0px;
+    }
+
+    .rota{
+        margin-bottom: 10px;
+    }
+}

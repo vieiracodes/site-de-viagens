@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmeiras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <section class="logo-e-pesquisa">
+            <a href="#" class="logo">
+                <img src="imagens/icon-logo.png" alt="IconLogo">
+                Logo
+            </a>
+            <a href="#" id="icone-de-pesquisa">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="30" height="30"
+                    viewBox="0 0 50 50"
+                    style=" fill:#666666;"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path></svg>
+            </a>
+        </section>
+        <section class="opcoes">
+            <div class="container-selecao">
+                <nav class="selecao">
+                    <a href="#">Flight</a>
+                    <a href="#">Hotel</a>
+                    <a href="#">Rental</a>
+                </nav>
+            </div>
+            <div class="container-viagem">
+                <div class="viagem">
+                <span class="travel">
+                    <p>Travel the world with us</p>
+                </span>
+                    <div class="rota">
+                        <div id="from">
+                            <p>From</p>
+                            <input type="text" name="de" placeholder="Departing from"></input>
+                        </div>
+                        <div id="to">
+                            <p>To</p>
+                            <input type="text" name="para" placeholder="Arriving at"></input>
+                    </div>
+                    </div>
+                    <a href="#">Search and find dates</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="ofertas">
+            <div class="titulo-ofertas">
+                <h2>Good Offers Right Now </h2>
+                <p>Up to <strong>50%</strong> discount.</p>
+            </div>
+            <div class="boas-ofertas">
+                <div class="cinqueterre">
+                    <a href="#"><img src="imagens/cinqueterre.jpg" alt="Cinque Terre"></a>
+                    <span>Cinque Terre</span>
+                </div>
+                <div class="grid-items">
+                    <a href="#"><img src="imagens/newyork.jpg" alt="New York"></a>
+                    <span>New York</span>
+                </div>
+                <div class="grid-items">
+                    <a href="#"><img src="imagens/pisa.jpg" alt="Pisa"></a>
+                    <span>Pisa</span>
+                </div>
+                <div class="grid-items">
+                    <a href="#"><img src="imagens/sanfran.jpg" alt="San Francisco"></a>
+                    <span>San Francisco</span>
+                </div>
+                <div class="grid-items">
+                    <a href="#"><img src="imagens/paris.jpg" alt="Paris"></a>
+                    <span>Paris</span>
+                </div>
+            </div>
+        </section>
+        <section id="nature">
+            <div class="explore-natureza">
+                <div class="titulo-ofertas">
+                    <h2>Explore Nature</h2>
+                    <p>Travel with us and see nature at its finest.</p>
+                </div>
+                <div class="ofertas-natureza">
+                    <div class="flex-item">
+                        <img src="imagens/ocean.jpg" alt="West Coast">
+                        <div class="flex-text">
+                            <h3>West Coast, Norway</h3>
+                            <p class="price">Roundtrip from $79</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="#">Buy Tickets</a>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <img src="imagens/mountains.jpg" alt="Mountains">
+                        <div class="flex-text">
+                            <h3>Mountains, Austria</h3>
+                            <p class="price">One-way from $39</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <a href="#">Buy Tickets</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <div class="newsletter">
+            <div class="titulo-newsletter">
+                <h3>Get the best offers first!</h3>
+                <p>Join our newsletter</p>
+            </div>
+            <p>E-mail</p>
+            <input type="text" name="email" placeholder="Your Email address">
+            <a href="#">Subscribe</a>
+        </div>
+        <div class="contact">
+            <div class="titulo-contato">
+                <h3>Contact</h3>
+                <p>Let us book your next trip !</p>
+            </div>
+            <div class="formas-contato">
+                <p>Chicago, US</p>
+                <p>Phone: +00 151515</p>
+                <p>Email: mail@mail.com</p>
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="email" placeholder="Email">
+                <input type="text" name="message" placeholder="Message">
+                <a href="#">SEND MESSAGE</a>
+            </div>
+        </div>
+    </aside>
+    <footer class="informacoes">
+        <div class="creditos">
+            <p>Design por: <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+            <p>Código por: Gabriel Vieira</p>
+        </div>
+    </footer>
+</body>
+</html>
